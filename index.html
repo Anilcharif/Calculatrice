@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon menu web">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="icon" type= "image/ico" href="./favicon_io/favicon.ico">  
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+
+
+
+
+
+</head>
+<body>
+	<div class="calculator">
+		<input type="text" id="display" readonly>
+		<table>
+			<tr>
+				<td><button onclick="clearDisplay()">C</button></td>
+				<td><button onclick="backspace()">&larr;</button></td>
+				<td><button onclick="addToDisplay('/')">&divide;</button></td>
+				<td><button onclick="addToDisplay('*')">&times;</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="addToDisplay('7')">7</button></td>
+				<td><button onclick="addToDisplay('8')">8</button></td>
+				<td><button onclick="addToDisplay('9')">9</button></td>
+				<td><button onclick="addToDisplay('-')">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="addToDisplay('4')">4</button></td>
+				<td><button onclick="addToDisplay('5')">5</button></td>
+				<td><button onclick="addToDisplay('6')">6</button></td>
+				<td><button onclick="addToDisplay('+')">+</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="addToDisplay('1')">1</button></td>
+				<td><button onclick="addToDisplay('2')">2</button></td>
+				<td><button onclick="addToDisplay('3')">3</button></td>
+				<td rowspan="2"><button onclick="calculate()">=</button></td>
+			</tr>
+			<tr>
+				<td colspan="2"><button onclick="addToDisplay('0')">0</button></td>
+				<td><button onclick="addToDisplay('.')">.</button></td>
+			</tr>
+		</table>
+	</div>
+
+	<script src="calculator.js"></script>
+</body>
+</html>
